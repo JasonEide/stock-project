@@ -1,3 +1,15 @@
 .container {
     margin: 50px;
 }
+.card {
+    margin: 10px 10px !important;
+    transition: 1s !important;
+}
+.total {
+
+}
+@media (max-width: 770px) {
+    .card {
+        margin: 2% 2% !important;
+    }
+}
