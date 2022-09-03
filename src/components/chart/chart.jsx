@@ -8,7 +8,7 @@ export default function Charts() {
     const fetchData = async () => {
         setData(await FETCHDATAHERE());
     }
-    <TEST></TEST>
+    
     useEffect(() => {
         setInterval(() => {
             fetchData();
