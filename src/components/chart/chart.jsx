@@ -5,10 +5,11 @@ import styles from './chart.module.css';
 export default function Charts() {
     const [currentData, setData] = useState([]);
 
+    const fetchData = async () => {
+        setData(await FETCHDATAHERE());
+    }
+    
     useEffect(() => {
-        const fetchData = async () => {
-            setData(await FETCHDATAHERE());
-        }
         setInterval(() => {
             fetchData();
         }, 1000);
